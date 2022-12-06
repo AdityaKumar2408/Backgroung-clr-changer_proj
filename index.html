@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 20px 100px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      #img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+      }
+      p {
+        text-align: justify;
+        font-size: 25px;
+      }
+      .btn {
+        display: inline-block;
+        border: solid gray 2px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        /* Make curser as a pointer */
+        cursor: pointer;
+      }
+      #div {
+        text-align: right;
+        margin: 0px 3px;
+      }
+      #black {
+        background-color: #655b63;
+      }
+      #white {
+        background-color: #d8e5f8;
+      }
+      #green {
+        background-color: #f2a27f;
+      }
+      #blue {
+        background-color: #2db5eb;
+      }
+      #orange {
+        background-color: #d2b63d;
+      }
+      #red {
+        background-color: #f62495;
+      }
+      #voilet {
+        background-color: #b25ddd;
+      }
+      #select {
+        text-align: right;
+        /* padding: 0px 0px; */
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <span id="black" class="btn" onclick="color('#655b63')"></span>
+      <span id="white" class="btn" onclick="color('#d8e5f8')"></span>
+      <span id="green" class="btn" onclick="color('#f2a27f')"></span>
+      <span id="blue" class="btn" onclick="color('#2db5eb')"></span>
+      <span id="orange" class="btn" onclick="color('#d2b63d')"></span>
+      <span id="red" class="btn" onclick="color('#f62495')"></span>
+      <span id="voilet" class="btn" onclick="color('#b25ddd')"></span>
+    </div>
+    <p id="select">! Change Bg color !</p>
+    <h1 class="con">(: IMPORTANCE OF COLOURS IN HUMAN LIFE :)</h1>
+    <img src="color.jpg" alt="error" id="img" />
+    <p class="con">
+      It is hard to imagine a life without color. The truth is we don’t all
+      exactly know the colors that someone else sees. We all probably see colors
+      a little differently, different shades, different tones, and hues. We know
+      that color blindness exists and some people cannot see colors and instead
+      live in a world of muted colors. Almost more terrifying to me than color
+      blindness would be living in a world of hyper-color. Where every color
+      appeared neon and fluorescent. Colours form an inseparable part of our
+      life. If we look around and observe, we can see multiplicity of colours
+      which are blending into our lives and they do have an effect on us but
+      this may vary from individual to individual and also on the circumstances.
+      Colours are a part of our everyday life and a life without colours would
+      be boring and dull. Colours have a strong effect on senses especially on
+      sight, touch and taste and also on our emotions and overall
+      personality.<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      Effect of colours on emotions, mood, psychology, personality of any
+      individual comes under the domain of colour psychology. Colours affect
+      mood and emotions by influencing the flow and amount of energy throughout
+      the body. Different colours have different effects on human mind and body.
+      Same colour may have different effect on different people. This can be
+      understood by way of studying colours and their effects by categorising
+      them into two:-,<br />
+      1. WARM COLOURS: like red, orange and yellow which can be exciting,
+      stimulating or even anger igniting.,<br />
+      2. COOL COLOURS: like green, blue and purple often create feelings of
+      calmness, serenity, content as well as sadness.<br />
+      Since ages people are using a few colours to paint their homes and
+      workplaces. The colour used on walls of different rooms and even exteriors
+      have a specific effect on your minds and may create flow of positive
+      energy or may be quite depressing. People tend to colour their living
+      rooms in bright colours so that it gives them a gush of energy as and when
+      they enter into it after whole day of work. It rejuvenates them and makes
+      them fresh and energetic. However some people may choose light colours in
+      their living rooms because they want to feel relaxed and calm. Bedrooms
+      are mostly coloured in shades of red, pink or purple to create effect of
+      warmth, cosiness, positivity and love. Kid’s room are mostly painted with
+      bright colours, as kids are full of energy. Moreover choice of colours,
+      even have an effect on the size and lighting of room. Colouring walls with
+      light colours can make a room look bigger and brighter while dark colours
+      can be used in big rooms to make them appear cosy. Areas which are meant
+      to evoke ideas, creativity and passions are mostly coloured in various
+      bright and inviting colours like red, yellow, orange etc. Offices should
+      be painted in colours which tend to increase productivity, efficiency and
+      creativity amongst the staff. Most commonly people use light colours in
+      offices like light blue, very shades of green or even yellow. Even the
+      colour of bed-sheets and furniture used in homes and offices, have
+      different effect on different people.
+    </p>
+    <script>
+      function color(event) {
+        document.body.style.backgroundColor = event;
+        let con = document.getElementsByClassName("con"); //con will be an array
+        if (event == "#655b63") {
+          for (let ev of con) {
+            ev.style.color = "white";
+          }
+        } else {
+          for (let ev of con) {
+            ev.style.color = "black";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
